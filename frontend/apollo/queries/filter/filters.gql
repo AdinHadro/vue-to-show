@@ -1,0 +1,26 @@
+query Filters($where: JSON){
+  colors(where: $where) {
+    name
+    id
+  }
+  brands(where: $where) {
+    name
+    id
+  }
+  conditions(where: $where) {
+    name
+    id
+  }
+  materials(where: $where) {
+    name
+    id
+  }
+  sizes(where: $where) {
+    name
+    id
+  }
+  tags(where: $where) {
+    name
+    id
+  }
+}

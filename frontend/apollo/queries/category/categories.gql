@@ -1,0 +1,20 @@
+query Categories {
+  categories(where: {topLevel:true}) {
+    id,
+    name,
+    image {
+      url
+    },
+    url,
+    subCategories {
+      name,
+      id,
+      url,
+      subCategories {
+        name,
+        id,
+        url
+      }
+    }
+  }
+}
